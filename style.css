@@ -19,13 +19,7 @@ body {
 }
 
 /* Título principal */
-h1 {
-    color: white; /* Cor branca */
-    text-align: center; /* Centraliza o texto */
-}
-
-/* Parágrafos gerais */
-p {
+h1, h3, p {
     color: white; /* Cor branca */
     text-align: center; /* Centraliza o texto */
 }
