@@ -1,0 +1,122 @@
+/* Estilização geral da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do site */
+    margin: 0; /* Remove margens externas padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+
+    /* Adiciona uma camada escura sobre a imagem de fundo */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('fotos/logo-CBF.jpg');
+
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    background-attachment: fixed; /* Mantém o fundo parado ao rolar */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Título principal */
+h1 {
+    color: white; /* Cor branca */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Parágrafos gerais */
+p {
+    color: white; /* Cor branca */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #333; /* Cor de fundo escura */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* Lista da navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove espaçamento */
+    display: flex; /* Coloca os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Quebra linha se faltar espaço */
+}
+
+/* Cada item da lista */
+nav ul li {
+    margin-right: 1rem; /* Espaço entre itens */
+}
+
+/* Links da navegação */
+nav ul li a {
+    color: white; /* Cor branca */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Área dos jogadores */
+#jogadores {
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centraliza os cards */
+    flex-wrap: wrap; /* Permite várias linhas */
+    gap: 20px; /* Espaço entre os cards */
+    margin-top: 2rem; /* Distância do topo */
+    padding: 20px; /* Espaço interno */
+}
+
+/* Card de cada jogador */
+.jogador {
+    background-color: rgb(215, 199, 23); /* Cor de fundo */
+    padding: 1rem; /* Espaçamento interno */
+    width: 220px; /* Largura fixa */
+    text-align: center; /* Centraliza conteúdo */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Foto do jogador */
+#foto-jogador {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 220px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem sem deformar */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Nome do jogador */
+.jogador h3 {
+    margin-top: 10px; /* Espaço acima */
+    margin-bottom: 5px; /* Espaço abaixo */
+}
+
+/* Posição do jogador */
+.jogador h4 {
+    margin: 5px 0; /* Espaço vertical */
+}
+
+/* Área das seleções */
+#times {
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centraliza os cards */
+    margin-top: 2rem; /* Distância do topo */
+    padding-bottom: 2rem; /* Espaço inferior */
+}
+
+/* Card da seleção */
+.time {
+    background-color: white; /* Fundo branco */
+    padding: 1rem; /* Espaçamento interno */
+    width: 400px; /* Largura fixa */
+    text-align: center; /* Centraliza conteúdo */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Imagem dentro do card da seleção */
+.time img {
+    width: 100%; /* Ocupa toda a largura */
+    border-radius: 8px; /* Cantos arredondados */
+}
